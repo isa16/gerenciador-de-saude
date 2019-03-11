@@ -11,11 +11,11 @@ const ConsultaSchema = new mongoose.Schema({
         required: true,
     },
     horario_consulta: {
-        type: time,
+        type: String,
         required: true,
     },
     data_consulta: {
-        type: Data,
+        type: Date,
         required: true,
     },
     createdAt: {
@@ -24,6 +24,6 @@ const ConsultaSchema = new mongoose.Schema({
     },
 });
 
-RemedioSchema.plugin(mongoosePaginate);
+ConsultaSchema.plugin(mongoosePaginate);
 
 mongoose.model('Consulta', ConsultaSchema);

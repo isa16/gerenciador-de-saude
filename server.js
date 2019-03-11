@@ -11,7 +11,8 @@ app.use(cors())
 mongoose
   .connect(
     //'mongodb://nodeapi:nodeapi123@ds331135.mlab.com:31135/node-api',
-    'mongodb+srv://<USUARIO>:<SENHA>@cluster0-plxve.mongodb.net/node-api?retryWrites=true',
+    //'mongodb+srv://<USUARIO>:<SENHA>@cluster0-plxve.mongodb.net/node-api?retryWrites=true',
+    'mongodb+srv://icrivelli:icrivelli123@pdm1-niovw.mongodb.net/test?retryWrites=true',
     {
       useNewUrlParser: true
     })
@@ -22,5 +23,6 @@ requireDir('./src/models');
 
 // Rotas
 app.use('/api', require('./src/routes'));
+// app.use('/geren', require('./src/routes'));
 
-app.listen(3000);
+app.listen(3600);

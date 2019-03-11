@@ -11,7 +11,7 @@ const RemedioSchema = new mongoose.Schema({
     required: true,
   },
   horario_tomar: {
-    type: time,
+    type: String,
     required: true,
   },
   createdAt: {
